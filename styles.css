@@ -360,10 +360,12 @@ footer {
 /*------ ESTUDIOS -------*/
 .estudios {
    color: #fff;
-   display: flex;
-   flex-direction: column;
-   text-align: center;
-   justify-content: space-evenly;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 20px;
+   max-width: 1000px;
+   margin: auto;
+   padding: 20px;
 }
 
 .estudios h4 {
@@ -656,4 +658,8 @@ background-color: #F27C38;
 
 a {
    text-decoration: none; 
+}
+
+.experiencia {
+   font-size: 12px;
 }
