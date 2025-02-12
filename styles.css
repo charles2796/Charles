@@ -568,7 +568,7 @@ section {
    margin-bottom: 150px;
 }
 
-.btn {
+.btn__con {
    max-width: 50px;
    height: 50px;
    background-color: transparent;
@@ -581,7 +581,7 @@ section {
    box-shadow: none; /* Evita resplandor al hacer clic */
 }
 
-.btn:hover {
+.btn__con:hover {
 background-color: #313640cf;
 border-radius: 25px;
 }
@@ -640,4 +640,53 @@ a {
 
 .experiencia {
    font-size: 12px;
+}
+
+/* Botones */
+
+.btn {
+   display: flex; /* Usa flexbox */
+   justify-content: center; /* Centra horizontalmente */
+   align-items: center; /* Centra verticalmente */
+   text-align: center;
+   width: 150px;
+   height: 50px;
+   padding: 10px 50px;
+   background-color: transparent;
+   color: #fff;
+   position: relative;
+   gap: 90px;
+   text-align: center;
+}
+
+
+/*--------Botón ola-------*/
+.btn-1 {
+   border: 1px solid #F27C38;
+   overflow: hidden;
+}
+
+.btn-1::before {
+   content: '';
+   background-color: #F27C38;
+   display: block;
+   height: 200%;
+   width: 140%;
+   position: absolute;
+   z-index: -1;
+   transition: top .6s, left .6s;
+   border-radius: 50%;
+   top: 100%;
+   left: 30%;
+}
+.btn-1:hover::before {
+   top: -35%;
+   left: -20%;
+}
+
+
+/*títulos */
+.form__title {
+font-size: 14px;
+font-family: Arial, Helvetica, sans-serif;
 }
