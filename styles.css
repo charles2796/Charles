@@ -580,31 +580,8 @@ section {
    box-shadow: none; /* Evita resplandor al hacer clic */
 }
 
-/* Botones*/
-.btn{
-   overflow: hidden;
-}
-
-.btn::before {
-   content: '';
-   background-color: #f27c38a3;
-   display: block;
-   height: 200%;
-   width: 140%;
-   position: absolute;
-   z-index: -1;
-   transition: top .6s, left .6s;
-   border-radius: 50%;
-   top: 100%;
-   left: 30%;
-}
-.btn:hover::before {
-   top: -35%;
-   left: -20%;
-}
-
 .btn:hover {
-background-color: #f27c38a3;
+background-color: #313640cf;
 border-radius: 25px;
 }
 .btn__ver {
