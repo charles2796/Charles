@@ -28,14 +28,14 @@ body, div, ul, nav, header, footer, a, li, label {
 
 
 header { 
-   background-color: var(--oscurocla--color);
+   background-color: var(--blanco-color);
    display: flex;
 }
 
 /*---- header section ----*/
 
 .header { 
-   background-color: var(--oscurocla--color);
+   background-color: var(--blanco-color);
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -65,6 +65,7 @@ header {
    width: 100vw;
    top: 0;
    z-index: -1;
+   background-color: #ffffff6d;
 }
 
 .header__nav-list { 
@@ -90,7 +91,7 @@ header {
 }
 
 .header__nav-item a {
-   color: inherit;
+   color: var(--oscurocla--color);
    text-decoration: none; 
 }
 
